@@ -7,7 +7,6 @@ export function authMiddleware (req: Request, res: Response, next: NextFunction)
     
     try {
         const payload = jwt.verify(token, JWT_PASSWORD);
-        // @ts-ignore
         req.id = payload.id
         next();
     } catch(e) {

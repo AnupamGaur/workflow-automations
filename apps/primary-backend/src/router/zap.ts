@@ -7,7 +7,7 @@ import { prismaClient } from "../db";
 const router = Router();
 
 router.post("/", authMiddleware, async (req, res) => {
-    // @ts-ignore
+
     const id: string = req.id;
     const body = req.body;
     const parsedData = ZapCreateSchema.safeParse(body);
@@ -58,7 +58,7 @@ router.post("/", authMiddleware, async (req, res) => {
 })
 
 router.get("/", authMiddleware, async (req, res) => {
-    // @ts-ignore
+
     const id = req.id;
     const zaps = await prismaClient.zap.findMany({
         where: {
@@ -84,7 +84,7 @@ router.get("/", authMiddleware, async (req, res) => {
 })
 
 router.get("/:zapId", authMiddleware, async (req, res) => {
-    //@ts-ignore
+
     const id = req.id;
     const zapId = req.params.zapId;
 
