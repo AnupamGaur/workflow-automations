@@ -1,4 +1,5 @@
-![image](https://github.com/user-attachments/assets/a3946e37-82ab-4ef1-957e-ae6b85fa8843)
+![image](https://github.com/user-attachments/assets/19efc887-796e-4a21-979c-c600f4877d33)
+
 ![image](https://github.com/user-attachments/assets/15ad8c0b-b7bf-44b7-b542-d8635f32680d)
 
 # Turborepo starter
